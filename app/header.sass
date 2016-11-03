@@ -3,4 +3,41 @@
 @import "sass/vars"
 @import "sass/base"
 
-//First screen styles
+.top-menu
+	height: 28px
+	line-height: 28px
+
+.top-menu nav
+	background-color: $top-header-menu-bg-color
+	text-align: right
+	a
+		padding: 0 18px 0 18px
+
+.top-menu nav ul,.social ul
+	padding: 0
+	margin: 0
+
+.top-menu nav li,.email,.phone,.social li
+	display: inline-block
+
+.social
+	width: 180px
+	padding-top: 2px
+
+.social li
+	margin-right: 3px
+	float: left
+
+.top-menu a
+	text-decoration: none
+	color: #fff
+	&:hover
+		color: #fff
+
+.email,.phone,.top-menu a
+	font-size: 0.875em
+	font-weight: 300
+
+.email
+	margin-right: 10px
+
