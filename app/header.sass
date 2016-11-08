@@ -6,14 +6,38 @@
 .top-menu
 	height: 28px
 	line-height: 28px
+	font-size: 0.875em
+	font-weight: 300
+	position: relative
+	z-index: 10
+
+.bg-top-munu // чтобы реализовать синюю полоску на всю длину левой части макета, пришлось сделать подложку с цветом
+	width: 45%
+	height: 27px
+	position: absolute
+	background-color: $top-header-menu-bg-color
 
 .top-menu nav
-	background-color: $top-header-menu-bg-color
 	text-align: right
-	a
-		padding: 0 18px 0 18px
+	background-color: $top-header-menu-bg-color
+	li
+		text-align: center
+		a
+			padding: 0 18px 0 18px
+		&:nth-of-type(2)
+			position: relative
+			&::after 
+				content: ""
+				position: absolute
+				border: 1px solid rgba(255, 255, 255, .3)
+				height: 27px
+		&:nth-of-type(1)
+			background-color: $top-header-menu-subscribe-bg-color
 
-.top-menu nav ul,.social ul
+		&:nth-of-type(4)
+			background-color: $top-header-menu-sign-in-bg-color
+
+.top-menu nav ul ,.social ul
 	padding: 0
 	margin: 0
 
@@ -33,10 +57,6 @@
 	color: #fff
 	&:hover
 		color: #fff
-
-.email,.phone,.top-menu a
-	font-size: 0.875em
-	font-weight: 300
 
 .email
 	margin-right: 10px
