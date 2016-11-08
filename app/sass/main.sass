@@ -3,6 +3,7 @@
 @import "vars"
 @import "libs"
 
+/* Пример:
 /*=========================================
 /*=            Section last-news          =
 /*========================================*/
@@ -15,22 +16,33 @@
 
 
 
-@import "media"
-
 
 /*=========================================
 /*=            Section charity            =
 /*========================================*/
 .bg
 	background-repeat: no-repeat
-	background-position: center center
+	background-position: center
+	background-size: cover
 
 
 .charity
-	background-image: url(app/img/bg-charity.jpg)
+	background-image: url(/img/bg-charity.jpg)
+	min-height: 430px
 
 
 .meet-club
-	background-image: url(app/img/bg-meet-club.jpg)
+	background-image: url(/img/bg-meet-club.jpg)
+	min-height: 515px
 
 /*=====  End of Section charity  ======*/
+
+
+
+
+
+
+
+@import "media" //этот импорт должен в самом конце находиться
+
+
